@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="n20123404.leejungsu.everydaylifelogger.write">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:background="@drawable/background_write"
+        android:layout_below="@+id/tv_whereOwn"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="35dp"
+        android:weightSum="1">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/et_textOwn"
+            android:layout_margin="10dip"
+            android:hint="          이 곳, 이 시간을 기억해봐요!"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_timeOwn"
+        android:textSize="20dp"
+        android:text="시간입려어어억"
+        android:layout_marginTop="39dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_whereOwn"
+        android:textSize="20dp"
+        android:text="지역입려어어억"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/tv_timeOwn"
+        android:layout_alignLeft="@+id/tv_timeOwn"
+        android:layout_alignStart="@+id/tv_timeOwn"
+        android:textColor="#E7A5A5"
+        android:onClick="myClickHandler" />
+
+
+</RelativeLayout>
